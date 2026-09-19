@@ -24,15 +24,26 @@ export default async function HomePage() {
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-14">
-      <section aria-labelledby="welcome-title" className="rounded-2xl border border-sky-100 bg-linear-to-br from-sky-50 via-white to-pink-50 p-6 sm:p-10">
-        <Badge label="Góc học tập" color="pink" />
-        <h1 id="welcome-title" className="mt-4 max-w-2xl text-3xl font-bold leading-tight tracking-tight text-sky-900 sm:text-4xl">
-          Chào mừng đến với <span className="text-pink-700">MyBlog</span>
-        </h1>
-        <p className="mt-4 max-w-2xl leading-7 text-slate-600">
-          Một góc nhỏ để đọc, học hỏi và lưu lại những kiến thức thú vị về lập trình web.
-        </p>
-      </section>
+      <section aria-labelledby="welcome-title" className="relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg sm:p-10">
+    <div
+    aria-hidden="true"
+    className="absolute inset-x-0 top-0 h-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500"
+    />
+    
+    <Badge label="Góc học tập" color="pink" />
+    
+    <h1
+    id="welcome-title"
+    className="mt-4 max-w-2xl bg-linear-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-3xl font-bold leading-tight tracking-tight text-transparent sm:text-4xl"
+    >
+      Chào mừng đến với MyBlog
+      </h1>
+
+  <p className="mt-4 max-w-2xl leading-7 text-slate-600">
+    Một góc nhỏ để đọc, học hỏi và lưu lại những kiến thức thú vị
+    về lập trình web.
+  </p>
+</section>
 
       <section id="articles" aria-labelledby="articles-title" className="mt-12 scroll-mt-6">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
@@ -56,7 +67,7 @@ export default async function HomePage() {
         <Badge label="Về tác giả" color="pink" />
         <h2 id="about-title" className="mt-3 text-xl font-bold text-sky-900">Nguyễn Ngọc Gia Hân</h2>
         <p className="mt-3 max-w-2xl leading-7 text-slate-600">
-          Mình là sinh viên Công nghệ Đa phương tiện, đang học cách xây dựng website với Next.js và Tailwind CSS.
+          Mình là sinh viên Công nghệ Đa phương tiện - Phát triển ứng dụng Đa phương tiện, đang học cách xây dựng website với Next.js và Tailwind CSS.
         </p>
       </section>
     </div>

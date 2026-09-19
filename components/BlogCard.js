@@ -6,7 +6,7 @@ export default function BlogCard({ post }) {
     <article className="flex h-full flex-col rounded-2xl border border-sky-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
       {/* JSONPlaceholder không có category; đây là nhãn do giao diện đặt. */}
       <div><Badge label="Bài viết" color={post.id % 2 === 0 ? "pink" : "blue"} /></div>
-      <h3 className="mb-3 mt-4 line-clamp-2 text-lg font-bold leading-7 text-slate-900">
+      <h3 className="mb-3 mt-4 line-clamp-2 text-lg font-bold leading-7 text-slate-800">
         {post.title}
       </h3>
       <p className="mb-6 line-clamp-3 text-sm leading-6 text-slate-600">{post.body}</p>
@@ -15,7 +15,7 @@ export default function BlogCard({ post }) {
         <Link
           href={`/blog/${post.id}`}
           aria-label={`Đọc tiếp: ${post.title}`}
-          className="rounded-lg bg-sky-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-pink-700"
+          className="rounded-lg bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:scale-105 hover:opacity-90"
         >
           Đọc tiếp →
         </Link>

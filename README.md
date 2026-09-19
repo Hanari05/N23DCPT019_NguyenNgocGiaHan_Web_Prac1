@@ -83,8 +83,8 @@ n23dcpt019_nguyenngocgiahan_web_prac1/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/Hanari05/n23dcpt019_nguyenngocgiahan_web_prac1.git
-cd n23dcpt019_nguyenngocgiahan_web_prac1
+git clone https://github.com/Hanari05/N23DCPT019_NguyenNgocGiaHan_Web_prac1.git
+cd N23DCPT019_NguyenNgocGiaHan_Web_prac1
 ```
 
 ### 2. Cài đặt thư viện

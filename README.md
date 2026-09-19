@@ -4,7 +4,7 @@ Website danh sách bài viết được xây dựng bằng **Next.js App Router*
 
 ## Demo trực tuyến
 
-[Xem website trên GitHub Pages](https://hanari05.github.io/n23dcpt019_nguyenngocgiahan_web_prac1/)
+[Xem website trên GitHub Pages](https://hanari05.github.io/N23DCPT019_NguyenNgocGiaHan_Web_Prac1/)
 
 ## Thông tin sinh viên
 

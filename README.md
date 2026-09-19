@@ -2,6 +2,10 @@
 
 Website danh sách bài viết được xây dựng bằng **Next.js App Router** và **Tailwind CSS**. Dữ liệu bài viết được lấy từ REST API JSONPlaceholder, hiển thị dưới dạng lưới responsive và có trang chi tiết cho từng bài viết.
 
+## Demo trực tuyến
+
+[Xem website trên GitHub Pages](https://hanari05.github.io/n23dcpt019_nguyenngocgiahan_web_prac1/)
+
 ## Thông tin sinh viên
 
 - **Họ và tên:** Nguyễn Ngọc Gia Hân
@@ -111,10 +115,21 @@ Mở [http://localhost:3000](http://localhost:3000) trên trình duyệt.
 ```bash
 npm run lint
 npm run build
-npm start
+npx serve out
 ```
 
-Lệnh `npm start` được sử dụng sau khi `npm run build` hoàn thành.
+Sau khi build, phiên bản tĩnh của website được tạo trong thư mục `out`.
+
+## Triển khai trên GitHub Pages
+
+Workflow `.github/workflows/deploy-pages.yml` tự động thực hiện các bước sau mỗi khi có commit mới trên nhánh `main`:
+
+1. Cài đặt dependencies bằng `npm ci`.
+2. Build website thành static export.
+3. Tải thư mục `out` lên GitHub Pages.
+4. Xuất bản website tại đường dẫn demo phía trên.
+
+Route chi tiết `/blog/[id]` được tạo sẵn cho 12 bài viết bằng `generateStaticParams()` để tương thích với môi trường hosting tĩnh.
 
 ## Responsive
 
@@ -126,7 +141,7 @@ Danh sách bài viết thay đổi số cột theo kích thước màn hình:
 
 ## Ghi chú
 
-- Website cần kết nối Internet để tải dữ liệu từ JSONPlaceholder.
+- Quá trình build cần kết nối Internet để tải dữ liệu từ JSONPlaceholder.
 - JSONPlaceholder là API thử nghiệm nên nội dung bài viết chỉ là dữ liệu mẫu.
 - Dự án không lưu hoặc chỉnh sửa dữ liệu trên máy chủ JSONPlaceholder.
 
@@ -135,3 +150,4 @@ Danh sách bài viết thay đổi số cột theo kích thước màn hình:
 **Nguyễn Ngọc Gia Hân - N23DCPT019**
 
 GitHub: [Hanari05](https://github.com/Hanari05)
+

@@ -2,12 +2,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Badge from "@/components/Badge";
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Array.from({ length: 12 }, (_, index) => ({
+    id: String(index + 1),
+  }));
+}
+
 async function getPost(id) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${encodeURIComponent(id)}`,
     {
-      cache: "no-store",
-      signal: AbortSignal.timeout(10000),
+      signal: AbortSignal.timeout(30000),
     },
   );
 
@@ -56,3 +63,4 @@ export default async function BlogDetailPage({ params }) {
     </article>
   );
 }
+

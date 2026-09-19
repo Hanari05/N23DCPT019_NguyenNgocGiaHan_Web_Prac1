@@ -4,8 +4,7 @@ import BlogCard from "@/components/BlogCard";
 // Fetch trên server; không cần useEffect hoặc "use client".
 async function getPosts() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    cache: "no-store",
-    signal: AbortSignal.timeout(10000),
+    signal: AbortSignal.timeout(30000),
   });
   if (!response.ok) throw new Error("Không thể tải danh sách bài viết.");
   const posts = await response.json();
@@ -73,3 +72,4 @@ export default async function HomePage() {
     </div>
   );
 }
+

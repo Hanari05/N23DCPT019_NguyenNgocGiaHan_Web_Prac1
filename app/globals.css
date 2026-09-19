@@ -6,13 +6,13 @@
 
 @layer base {
   body {
-    background: #f0f9ff;
-    color: #0f172a;
+    background: #fff9fc;
+    color: #334155;
     font-family: Arial, Helvetica, sans-serif;
   }
 
   :focus-visible {
-    outline: 2px solid #be185d;
+    outline: 2px solid #ec4899;
     outline-offset: 4px;
   }
 }
